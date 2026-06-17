@@ -1,176 +1,181 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SkillBridge - Discover India's Next Generation of Talent</title>
+<title>SkillBridge | Discover India's Next Generation of Talent</title>
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
 body{
-background:#f8fafc;
-color:#1e293b;
+    background:#f8fafc;
+    color:#1e293b;
+    line-height:1.6;
 }
 
 header{
-background:linear-gradient(135deg,#2563eb,#7c3aed);
-color:white;
-padding:80px 20px;
-text-align:center;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:white;
+    text-align:center;
+    padding:100px 20px;
 }
 
 header h1{
-font-size:3rem;
-margin-bottom:15px;
+    font-size:3.5rem;
+    margin-bottom:15px;
 }
 
 header p{
-font-size:1.2rem;
-max-width:700px;
-margin:auto;
-margin-bottom:30px;
+    max-width:800px;
+    margin:auto;
+    font-size:1.2rem;
+    margin-bottom:30px;
 }
 
 .btn{
-display:inline-block;
-padding:14px 28px;
-border-radius:10px;
-text-decoration:none;
-font-weight:bold;
-margin:10px;
-transition:0.3s;
+    display:inline-block;
+    padding:14px 28px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:bold;
+    margin:10px;
+    transition:0.3s;
 }
 
 .btn-primary{
-background:white;
-color:#2563eb;
-}
-
-.btn-primary:hover{
-transform:translateY(-3px);
+    background:white;
+    color:#2563eb;
 }
 
 .btn-secondary{
-background:rgba(255,255,255,0.15);
-border:1px solid white;
-color:white;
+    border:2px solid white;
+    color:white;
 }
 
-.btn-secondary:hover{
-background:white;
-color:#2563eb;
+.btn:hover{
+    transform:translateY(-3px);
 }
 
 section{
-padding:70px 20px;
-max-width:1200px;
-margin:auto;
+    padding:80px 20px;
+    max-width:1200px;
+    margin:auto;
 }
 
 .section-title{
-text-align:center;
-font-size:2rem;
-margin-bottom:50px;
+    text-align:center;
+    font-size:2rem;
+    margin-bottom:50px;
 }
 
 .grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 }
 
 .card{
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
 .card h3{
-margin-bottom:10px;
-color:#2563eb;
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.service{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
 .steps{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
 }
 
 .step{
-background:white;
-padding:25px;
-border-radius:15px;
-text-align:center;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
-.step-number{
-width:50px;
-height:50px;
-background:#2563eb;
-color:white;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-margin:auto;
-margin-bottom:15px;
-font-size:1.2rem;
-font-weight:bold;
-}
-
-.talent{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+.number{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#2563eb;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:auto;
+    margin-bottom:15px;
+    font-weight:bold;
 }
 
 .profile{
-background:white;
-padding:20px;
-border-radius:15px;
-box-shadow:0 5px 15px rgba(0,0,0,0.08);
-text-align:center;
-}
-
-.profile h3{
-margin-bottom:10px;
-}
-
-.cta{
-background:linear-gradient(135deg,#2563eb,#7c3aed);
-color:white;
-text-align:center;
-border-radius:20px;
-padding:60px 20px;
-}
-
-.cta h2{
-margin-bottom:15px;
-}
-
-footer{
-text-align:center;
-padding:30px;
-background:#0f172a;
-color:white;
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
 .badge{
-background:#dcfce7;
-color:#166534;
-padding:5px 12px;
-border-radius:20px;
-font-size:0.85rem;
-display:inline-block;
-margin-top:10px;
+    display:inline-block;
+    margin-top:10px;
+    background:#dcfce7;
+    color:#166534;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:0.8rem;
+}
+
+.cta{
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+    border-radius:20px;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.contact{
+    text-align:center;
+}
+
+@media(max-width:768px){
+    header h1{
+        font-size:2.5rem;
+    }
 }
 </style>
 </head>
@@ -178,130 +183,174 @@ margin-top:10px;
 <body>
 
 <header>
+
 <h1>SkillBridge</h1>
+
 <p>
-Discover India's Next Generation of Talent.
-Hire verified student freelancers from Class 9 to College for design, development, content creation, video editing, marketing, and more.
+India's Marketplace for the Next Generation of Talent.
+Hire verified student freelancers from Class 9 to College for design, development, video editing, content creation, marketing, and more.
 </p>
 
-<a href="YOUR_CLIENT_FORM_LINK" class="btn btn-primary">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdw5qOxDreKG3xKHMfdZnTFjHvZVKFveya7hIRgTHRpo-E6ew/viewform" class="btn btn-primary">
 Hire Talent
 </a>
 
-<a href="YOUR_STUDENT_FORM_LINK" class="btn btn-secondary">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScgyM2Efs1kT-LG0cqFALMjn_Gh4VjD0qQwXDIkiYZmDvwpXA/viewform" class="btn btn-secondary">
 Join as Student
 </a>
+
 </header>
 
 <section>
+
 <h2 class="section-title">Why SkillBridge?</h2>
 
 <div class="grid">
 
 <div class="card">
-<h3>Verified Talent</h3>
-<p>Students are verified through school, college, and portfolio reviews.</p>
+<h3>Verified Student Talent</h3>
+<p>Every freelancer is a real student with verified educational details and portfolio.</p>
 </div>
 
 <div class="card">
 <h3>Affordable Pricing</h3>
-<p>Businesses get quality work without expensive agency costs.</p>
+<p>Get quality work without expensive agency costs.</p>
 </div>
 
 <div class="card">
 <h3>Fresh Skills</h3>
-<p>Young creators bring modern design, content, coding, and marketing skills.</p>
+<p>Young creators understand the latest trends, tools, and technologies.</p>
 </div>
 
 <div class="card">
 <h3>Fast Communication</h3>
-<p>Quick responses and faster project delivery.</p>
+<p>Connect with talent quickly and start projects faster.</p>
 </div>
 
 </div>
+
 </section>
 
 <section>
+
+<h2 class="section-title">Popular Services</h2>
+
+<div class="services">
+
+<div class="service">🎨 Graphic Design</div>
+<div class="service">🖼 Thumbnail Design</div>
+<div class="service">🎥 Video Editing</div>
+<div class="service">✍ Content Writing</div>
+<div class="service">💻 Website Development</div>
+<div class="service">📱 App Development</div>
+<div class="service">🎯 UI/UX Design</div>
+<div class="service">📈 Social Media Management</div>
+
+</div>
+
+</section>
+
+<section>
+
 <h2 class="section-title">How It Works</h2>
 
 <div class="steps">
 
 <div class="step">
-<div class="step-number">1</div>
-<h3>Post Project</h3>
-<p>Tell us what you need and your budget.</p>
+<div class="number">1</div>
+<h3>Post a Project</h3>
+<p>Tell us about your project and requirements.</p>
 </div>
 
 <div class="step">
-<div class="step-number">2</div>
+<div class="number">2</div>
 <h3>Find Talent</h3>
-<p>Browse talented students or receive recommendations.</p>
+<p>Browse or get matched with skilled student freelancers.</p>
 </div>
 
 <div class="step">
-<div class="step-number">3</div>
+<div class="number">3</div>
 <h3>Hire</h3>
-<p>Select the student who best fits your project.</p>
+<p>Select the best candidate for your project.</p>
 </div>
 
 <div class="step">
-<div class="step-number">4</div>
+<div class="number">4</div>
 <h3>Get Results</h3>
 <p>Receive quality work quickly and affordably.</p>
 </div>
 
 </div>
+
 </section>
 
 <section>
-<h2 class="section-title">Featured Talent</h2>
 
-<div class="talent">
+<h2 class="section-title">Featured Talent Categories</h2>
+
+<div class="grid">
 
 <div class="profile">
-<h3>Rahul Sharma</h3>
-<p>Video Editor</p>
-<p>Shorts • Reels • YouTube Videos</p>
+<h3>Video Editors</h3>
+<p>YouTube Videos, Reels & Shorts</p>
 <span class="badge">Verified Student</span>
 </div>
 
 <div class="profile">
-<h3>Priya Verma</h3>
-<p>Graphic Designer</p>
-<p>Logos • Posters • Social Media</p>
+<h3>Graphic Designers</h3>
+<p>Logos, Posters & Social Media Graphics</p>
 <span class="badge">Verified Student</span>
 </div>
 
 <div class="profile">
-<h3>Aman Singh</h3>
-<p>Web Developer</p>
-<p>Landing Pages • Websites • Apps</p>
+<h3>Web Developers</h3>
+<p>Landing Pages, Websites & Web Apps</p>
 <span class="badge">Verified Student</span>
 </div>
 
 </div>
+
 </section>
 
-<section class="cta">
-<h2>Discover India's Future Talent Today</h2>
+<section>
+
+<div class="cta">
+
+<h2>Discover India's Future Talent Today 🚀</h2>
+
 <p>
-SkillBridge helps businesses discover talented students before everyone else does.
+Fiverr helps you hire freelancers.<br>
+Upwork helps you hire professionals.<br>
+<strong>SkillBridge helps you discover the future.</strong>
 </p>
+
 <br>
 
-<a href="YOUR_CLIENT_FORM_LINK" class="btn btn-primary">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSdw5qOxDreKG3xKHMfdZnTFjHvZVKFveya7hIRgTHRpo-E6ew/viewform" class="btn btn-primary">
 Post a Project
 </a>
 
-<a href="YOUR_STUDENT_FORM_LINK" class="btn btn-secondary">
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScgyM2Efs1kT-LG0cqFALMjn_Gh4VjD0qQwXDIkiYZmDvwpXA/viewform" class="btn btn-secondary">
 Become a Freelancer
 </a>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<p>Email: skillbridgeindia@gmail.com</p>
+<p>Connecting Businesses with India's Next Generation of Talent.</p>
 
 </section>
 
 <footer>
-<p>© 2026 SkillBridge. Built for India's Next Generation of Talent.</p>
+<p>© 2026 SkillBridge. All Rights Reserved.</p>
 </footer>
 
 </body>
 </html>
+```
